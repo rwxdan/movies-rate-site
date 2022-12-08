@@ -9,8 +9,6 @@ const search = document.querySelector("#search");
 const content = document.querySelector("#content");
 const column = document.querySelector(".site-column");
 
-getMovies(apiLink);
-
 async function getMovies(url) {
   await fetch(url, {
     method: "GET",
@@ -65,3 +63,5 @@ returnHome.addEventListener("click", () => {
   column.innerHTML = "";
   getMovies(apiLink);
 });
+
+window.onload = getMovies(apiLink);
