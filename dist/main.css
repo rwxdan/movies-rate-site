@@ -2,6 +2,7 @@
 
 :root {
   --ff: "Nunito Sans", sans-serif;
+  --neutral-clr-350: hsl(228, 100%, 96%, 0.7);
   --neutral-clr-400: hsl(228, 100%, 96%);
   --neutral-clr-500: hsl(230, 6%, 58%, 0.1);
   --neutral-clr-700: hsl(218, 39%, 14%);
@@ -34,7 +35,10 @@ h1 {
   font-size: 2.75rem;
   font-weight: 700;
   color: var(--neutral-clr-400);
-  letter-spacing: 4px;
+  letter-spacing: 6px;
+  text-align: center;
+  text-shadow: 0 0.0625em 0.125em var(--neutral-clr-350);
+  padding-block: 0.25em 0.5em;
 }
 
 .primary-nav .logo {
@@ -58,7 +62,7 @@ h1 {
   border: 1px solid var(--neutral-clr-500);
   background-image: url("../assets/images/icon-search.svg");
   background-repeat: no-repeat;
-  background-size: 10%;
+  background-size: 1.25em;
   background-position: right 0.5em top 0.5em;
 }
 
@@ -88,8 +92,8 @@ h1 {
   left: 0;
   right: 0;
   background-color: var(--neutral-clr-750);
-  box-shadow: 0 -2em 1.5em 1em hsl(222, 25%, 10%, 0.2),
-    0 -1em 1em 1em hsl(222, 25%, 10%, 0.3),
+  box-shadow: 0 -2em 1.5em 1.5em hsl(222, 25%, 10%, 0.2),
+    0 -1em 1.25em 1.25em hsl(222, 25%, 10%, 0.3),
     0 -0.5em 1em 1em hsl(222, 25%, 10%, 0.9);
   padding-block: 0 1.5em;
   padding-inline: 0.5em;
