@@ -130,7 +130,7 @@ h1 {
   border-radius: 0.75em;
 }
 
-.thumbnail:hover {
+.card:hover .thumbnail {
   transform: scale(1.1);
 }
 
