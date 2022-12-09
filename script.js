@@ -70,7 +70,7 @@ returnHome.addEventListener("click", () => {
 });
 
 const changeTitle = () => {
-  h1.textContent = "Results:";
+  h1.textContent = `Results for: ${search.value}`;
 };
 
 const setTitle = () => {
