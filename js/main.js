@@ -14,7 +14,7 @@ const column = document.querySelector(".site-column");
 async function getMovies(url) {
   await fetch(url, {
     method: "GET",
-    cache: "no-cache",
+    cache: "default",
     headers: {
       "Content-Type": "aplication/json",
     },
@@ -28,6 +28,7 @@ async function getMovies(url) {
         const image = document.createElement("img");
         const title = document.createElement("p");
         const votes = document.createElement("p");
+        const reviewsLink = document.createElement("a");
         card.classList.add("card");
         details.classList.add("details");
         image.classList.add("thumbnail");
@@ -35,13 +36,24 @@ async function getMovies(url) {
         votes.classList.add("vote-average");
         image.src = imgPath + movie.poster_path;
         image.setAttribute("loading", "lazy");
-        title.textContent = `${movie.title}`;
+        title.innerHTML = `${movie.title}`;
         votes.textContent = `⭐${movie.vote_average} / 10`;
+        reviewsLink.textContent = "See reviews";
+        reviewsLink.setAttribute(
+          "href",
+          `./pages/movies.html?id=${movie.id}&title=${movie.title}`
+        );
+        reviewsLink.classList.add("reviews-link");
         card.appendChild(image);
         card.appendChild(details);
         details.appendChild(title);
         details.appendChild(votes);
+        details.appendChild(reviewsLink);
         column.appendChild(card);
+
+        card.addEventListener("click", () => {
+          window.location = `./pages/movies.html?id=${movie.id}&title=${movie.title}`;
+        });
       });
     })
     .catch((error) => {

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/9201bb4f71.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="shortcut icon"
+      href="../assets/images/icon.svg"
+      type="image/svg"
+    />
+    <link rel="stylesheet" href="../css/main.css" />
+    <script defer src="./movies.js"></script>
+    <title>Movie reviews</title>
+  </head>
+  <body>
+    <main class="site">
+      <nav class="primary-nav">
+        <a id="home" class="logo" href="../index.html"
+          ><img src="../assets/images/logo.svg" alt="" />reviews
+        </a>
+        <p class="atribution">
+          Coded by&nbsp;
+          <a href="https://github.com/rwxdan/">
+            <i class="fa-brands fa-github"></i>rwxdan</a
+          >
+        </p>
+      </nav>
+      <article>
+        <h1>Reviews for:</h1>
+        <h2 id="title"></h2>
+
+        <section id="content">
+          <div class="site-grid">
+            <div class="reviews-column">
+              <div class="review card">
+                <h3 class="reviews-content">New</h3>
+                <p class="reviews-content">
+                  Review:
+                  <input
+                    class="add-review"
+                    aria-label="review"
+                    type="text"
+                    id="new_review"
+                    value=""
+                  />
+                </p>
+                <p class="reviews-content">
+                  User:
+                  <input class="add-user" type="text" id="new_user" value="" />
+                </p>
+                <p>
+                  <a
+                    class="user-action"
+                    href="#"
+                    onclick="saveReview('new_review', 'new_user')"
+                    ><i class="fa-solid fa-floppy-disk"></i
+                  ></a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </article>
+    </main>
+  </body>
+</html>
