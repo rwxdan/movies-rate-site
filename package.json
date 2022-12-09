@@ -1,0 +1,21 @@
+{
+  "name": "movies-rate-site",
+  "version": "1.0.0",
+  "description": "Head over to the search bar and type in the movie title you want to look for, then just hover over the images! 🖼👆",
+  "main": "script.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rwxdan/movies-rate-site.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rwxdan/movies-rate-site/issues"
+  },
+  "homepage": "https://github.com/rwxdan/movies-rate-site#readme"
+}
