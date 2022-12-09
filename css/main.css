@@ -40,6 +40,14 @@ h1 {
   text-shadow: 0 0 0.25em hsl(212, 69%, 83%, 0.5);
 }
 
+h2 {
+  font-size: clamp(1.125rem, 3vh, 1.5rem);
+  color: var(--neutral-clr-400);
+  text-align: center;
+  font-weight: 400;
+  letter-spacing: 2px;
+}
+
 .primary-nav .logo {
   display: inline;
   font-size: 1rem;
@@ -100,6 +108,15 @@ h1 {
   justify-content: center;
 }
 
+.reviews-column {
+  margin-block: 2vmin;
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  gap: 2em;
+  justify-content: center;
+}
+
 .card {
   max-width: fit-content;
   overflow: hidden;
@@ -118,7 +135,7 @@ h1 {
   left: 0;
   right: 0;
   background-color: var(--neutral-clr-750);
-  box-shadow: 0 -1em 3.5em 4em hsl(222, 25%, 10%, 0.95);
+  box-shadow: 0 -1em 2.25em 2.5em hsl(222, 25%, 10%, 0.95);
   padding-block: 0 1.5em;
   padding-inline: 0.5em;
   text-align: center;
@@ -126,9 +143,15 @@ h1 {
   animation: bottom-to-top 400ms ease;
 }
 
-.movie-title {
+.movie-title,
+.reviews-content {
   font-size: 1.25rem;
   font-weight: 700;
+}
+
+.reviews-content {
+  color: var(--neutral-clr-400);
+  padding-block: 0.5em;
 }
 
 .movie-title,
@@ -142,8 +165,21 @@ h1 {
   font-weight: 400;
 }
 
+.reviews-link {
+  display: block;
+  letter-spacing: 1px;
+  font-size: 0.875rem;
+  color: var(--neutral-clr-400);
+  text-decoration: none;
+}
+
+.reviews-link:hover {
+  text-decoration: underline;
+}
+
 .card:hover {
   border-color: transparent;
+  cursor: pointer;
 }
 .card:hover .details,
 .card:hover .movie-title,
@@ -161,6 +197,26 @@ h1 {
 .card:hover .thumbnail {
   transform: scale(1.1);
   opacity: 0.85;
+}
+
+.add-review,
+.add-user {
+  display: block;
+  background-color: var(--neutral-clr-800);
+  color: var(--neutral-clr-400);
+  border-radius: 0.5em;
+  border: 0;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.user-action {
+  display: block;
+  color: var(--neutral-clr-400);
+}
+
+.review.card {
+  padding: 1.5em;
 }
 
 @keyframes bottom-to-top {
