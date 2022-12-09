@@ -1,7 +1,7 @@
 @import url("./reset.css");
 
 :root {
-  --ff: "Nunito Sans", sans-serif;
+  --ff: "Manrope", sans-serif;
   --neutral-clr-350: hsl(228, 100%, 96%, 0.7);
   --neutral-clr-400: hsl(228, 100%, 96%);
   --neutral-clr-500: hsl(230, 6%, 58%, 0.1);
@@ -64,6 +64,10 @@ h1 {
   background-repeat: no-repeat;
   background-size: 1.25em;
   background-position: right 0.5em top 0.5em;
+}
+
+.search:focus-within {
+  background-image: none;
 }
 
 .site-column {
