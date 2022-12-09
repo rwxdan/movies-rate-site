@@ -61,6 +61,7 @@ export default class ReviewsController {
       res.status(500).json({ error: e.message });
     }
   }
+
   static async apiGetReviews(req, res, next) {
     try {
       let id = req.params.id || {};

@@ -1,4 +1,4 @@
-import { express } from "express";
+import express from "express";
 
 import ReviewsCtrl from "./reviews.controller.js";
 
