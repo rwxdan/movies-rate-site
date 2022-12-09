@@ -70,8 +70,9 @@ h1 {
   margin-block: 2vmin;
   display: grid;
   grid-template-rows: auto;
-  grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(12rem, 15.625rem));
   gap: 2em;
+  justify-content: center;
 }
 
 .card {
