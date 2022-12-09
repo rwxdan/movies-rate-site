@@ -17,5 +17,10 @@
   "bugs": {
     "url": "https://github.com/rwxdan/movies-rate-site/issues"
   },
-  "homepage": "https://github.com/rwxdan/movies-rate-site#readme"
+  "homepage": "https://github.com/rwxdan/movies-rate-site#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "mongodb": "^4.12.1"
+  }
 }

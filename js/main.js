@@ -1,4 +1,5 @@
 "use strict";
+
 const apiKey = "2f8f50ca469aa025b4445eb6391b78db";
 const imgPath = "https://image.tmdb.org/t/p/w1280";
 const searchApi = `https://api.themoviedb.org/3/search/movie?&api_key=${apiKey}&query=`;
